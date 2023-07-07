@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500&display=swap');
+
+* {
+    font-family: 'Poppins', 'sans-serif';
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
 .grid {
     flex: 1;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(202, 202, 202);
+    border-color: #EEF1EF;
 }
 
 .row {
@@ -16,9 +27,96 @@
     flex-direction: column;
     width: 500px;
     height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-style: solid;
     border-width: 5px;
     border-radius: 5px;
-    border-color: rgb(87, 87, 87);
-    box-shadow: 20px 20px rgb(226, 226, 226);
-}  
+    border-color: #1C2321;
+    box-shadow: 20px 20px #e0e2e1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    color: #1C2321;
+    margin-top: 50px;
+}
+
+#settings {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#slider {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 5px;
+    background-color: #a7a7a7;
+    border-radius: 10px;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 30px;
+    background: #1C2321;
+    border-radius: 5px;
+}
+
+.sizeValue {
+    font-size: 30px;
+    text-align: center;
+    color: #1C2321;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 70px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    color: #1C2321;
+    background-color: rgb(239, 239, 239);
+    transition: ease-out 0.1s;
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgb(127, 127, 127);
+    height: 60px;
+    width: 210px;
+}
+
+.selected {
+    color: rgb(127, 127, 127);
+    height: px;
+    height: 55px;
+    width: 205px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#github-logo {
+    width: 25px;
+    transition: ease-out 0.1s;
+}
+
+#github-logo:hover {
+    width: 35px;
+}
