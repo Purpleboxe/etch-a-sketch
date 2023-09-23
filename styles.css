@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     width: 500px;
     height: 500px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -46,9 +46,9 @@ h1 {
 }
 
 #settings {
-    position: absolute;
-    top: 40%;
-    left: 8%;
+    position: relative;
+    left: -30%;
+    transform: translateY(50%);
     align-items: center;
     text-align: center;
     letter-spacing: 2px;
@@ -93,22 +93,18 @@ button {
 button:hover {
     cursor: pointer;
     color: rgb(127, 127, 127);
-    height: 60px;
-    width: 210px;
+
 }
 
 .selected {
-    color: rgb(127, 127, 127);
-    height: px;
-    height: 55px;
-    width: 205px;
+    color: rgb(161, 161, 161);
 }
 
 footer {
     position: absolute;
     bottom: 0;
-    left: 40%;
-    margin-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 20px;
 }
 
@@ -119,4 +115,21 @@ footer {
 
 #github-logo:hover {
     width: 35px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #container {
+        height: 300px;
+        width: 300px;
+        transform: translate(-10%, -50%);
+    }
+
+    #slider {
+        width: 200px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
 }
