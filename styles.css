@@ -1,122 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500&display=swap");
 
 * {
-    font-family: 'Poppins', 'sans-serif';
-    margin: 0;
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
 }
 
 body {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+
+.main {
+  height: 100%;
 }
 
 .grid {
-    flex: 1;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #EEF1EF;
+  flex: 1;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eef1ef;
 }
 
 .row {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 5px;
-    border-color: #1C2321;
-    box-shadow: 20px 20px #e0e2e1;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: #1c2321;
+  box-shadow: 20px 20px #e0e2e1;
 }
 
 h1 {
-    text-align: center;
-    font-size: 70px;
-    color: #1C2321;
-    margin-top: 50px;
+  text-align: center;
+  font-size: 70px;
+  color: #1c2321;
+  margin-top: 50px;
 }
 
 #settings {
-    position: absolute;
-    top: 40%;
-    left: 8%;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 2px;
+  position: relative;
+  left: -30%;
+  transform: translateY(50%);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 #slider {
-    -webkit-appearance: none;
-    width: 300px;
-    height: 5px;
-    background-color: #a7a7a7;
-    border-radius: 10px;
+  -webkit-appearance: none;
+  width: 300px;
+  height: 5px;
+  background-color: #a7a7a7;
+  border-radius: 10px;
 }
 
 #slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 20px;
-    height: 30px;
-    background: #1C2321;
-    border-radius: 5px;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 30px;
+  background: #1c2321;
+  border-radius: 5px;
 }
 
 .sizeValue {
-    font-size: 30px;
-    text-align: center;
-    color: #1C2321;
-    font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #1c2321;
+  font-weight: bold;
 }
 
 button {
-    margin-top: 70px;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    border: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    color: #1C2321;
-    background-color: rgb(239, 239, 239);
-    transition: ease-out 0.1s;
+  margin-top: 70px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  color: #1c2321;
+  background-color: rgb(239, 239, 239);
+  transition: ease-out 0.1s;
 }
 
 button:hover {
-    cursor: pointer;
-    color: rgb(127, 127, 127);
-    height: 60px;
-    width: 210px;
+  cursor: pointer;
+  color: rgb(127, 127, 127);
 }
 
 .selected {
-    color: rgb(127, 127, 127);
-    height: px;
-    height: 55px;
-    width: 205px;
+  color: rgb(161, 161, 161);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-    margin-bottom: 20px;
-    font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 20px;
 }
 
 #github-logo {
-    width: 25px;
-    transition: ease-out 0.1s;
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 30px;
+  transition: 0.1s ease-in-out;
 }
 
 #github-logo:hover {
-    width: 35px;
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1200px) {
+  #container {
+    height: 300px;
+    width: 300px;
+    transform: translate(-10%, -50%);
+  }
+
+  #slider {
+    width: 200px;
+  }
 }
